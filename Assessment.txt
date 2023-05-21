@@ -1,0 +1,56 @@
+                                                                     Day 5 Assessment
+
+1.For a given JSON iterate overall for loops(for,for in,for of,forEach).
+
+Example:
+                  let student={"users": 
+    {
+      "id": 1,
+      "first_name": "Robert",
+      "last_name": "Schwartz",
+      "email": "rob23@gmail.com"
+    }
+    }
+    
+    //for in
+    for(let key in student){
+    
+    console.log(student[key].id);
+    console.log(student[key].first_name);
+    console.log(student[key].last_name);
+    console.log(student[key].email);
+    } 
+    
+    //for of
+    let entries =Object.entries(student.users);
+    for(let[key,value] of entries){
+    console.log(`${key}:${value}`);
+    }
+    
+    //for loop
+    for(let i=0;i<entries.length;i++){
+    console.log(entries[i]);
+    }
+    
+    //forEach
+    entries.forEach(function(number,index){
+    console.log(`${number}, ${index}`);
+    });
+    
+2.Create your own resume data in JSON format.
+
+Example:
+               let student= 
+    {
+      "first_name": "vijay",
+      "last_name": "S",
+      "DOB":"14/2/1999",
+      "email": "vijays26@gmail.com",
+      "Phone NUmber":9512347890,
+      "Qualification":"BE-CSE","CGP":86,  
+    }
+     console.log("Resume");
+     console.log(student);
+
+
+
